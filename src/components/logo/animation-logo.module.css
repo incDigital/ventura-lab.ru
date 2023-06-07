@@ -1,0 +1,68 @@
+.stop-left {
+    stop-color: #fff;
+  }
+  
+.stop-right {
+    stop-color: rgba(255, 255, 255, 0.1);
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.logo__letter {
+    fill: rgba(0, 0, 0, 0);
+    animation: op 2.5s 3s forwards;
+}
+
+.logo__flower {
+    fill: #000;
+}
+
+.logo__leaves-left {
+    fill: #000;
+}
+
+.logo__leaves-right {
+    fill: #000;
+}
+
+.logo-text {
+    align-items: center;
+}
+
+.logo-wrapper h1 {
+    margin: 0;
+    font-size: 58px;
+}
+
+.logo-wrapper small {
+    margin: 0;
+    font-size: 24px;
+}
+
+.logo__rect {
+    fill: url(#mainGradient);
+    animation: draw 4.5s linear forwards;
+    transform-origin: center bottom;
+    transform: translateY(0);
+}
+
+@keyframes draw {
+    to {
+        transform: translateY(-1500px);
+    }
+}
+
+@keyframes op {
+    from {
+        fill: rgba(0, 0, 0, 0);
+    }
+    to {
+        fill: rgba(0, 0, 0, 1);
+    }
+}

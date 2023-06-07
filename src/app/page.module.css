@@ -1,0 +1,15 @@
+.hero {
+    height: 100vh;
+}
+
+.hero__inner {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.hero__navigation {
+    margin: 35px 0;
+}
