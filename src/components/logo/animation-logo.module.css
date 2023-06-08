@@ -1,6 +1,6 @@
 .stop-left {
     stop-color: #fff;
-  }
+}
   
 .stop-right {
     stop-color: rgba(255, 255, 255, 0.1);
@@ -35,6 +35,17 @@
     align-items: center;
 }
 
+.logo-text h1 {
+    opacity: 0;
+
+    animation: fade-in .7s 4s forwards;
+}
+
+.logo-wrapper small {
+    opacity: 0;
+    animation: fade-in .7s 4.5s forwards;
+}
+
 .logo-wrapper h1 {
     margin: 0;
     font-size: 58px;
@@ -64,5 +75,15 @@
     }
     to {
         fill: rgba(0, 0, 0, 1);
+    }
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
     }
 }

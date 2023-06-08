@@ -1,0 +1,51 @@
+.hamburger {
+    position: absolute;
+    top: 64px;
+    right: 84px;
+    opacity: 0;
+    animation: fade-in-slide-top .7s 4.5s forwards;
+    cursor: pointer;
+}
+
+.hamburger__text {
+    line-height: 10px;
+    color: #009900;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.hamburger__line {
+    height: 2px;
+    background-color: #000;
+    margin-top: 7px;
+    transition: .3s;
+}
+
+.hamburger__line_small {
+    height: 2px;
+    width: 70%;
+    background-color: #b2b2b2;
+    margin-left: 30%;
+}
+
+.hamburger:hover .hamburger__text {
+    transform: translateY(-5px);
+    transition: .3s;
+}
+
+.hamburger:hover .hamburger__line:last-child {
+    transform: translateY(5px);
+    transition: .3s;
+}
+
+@keyframes fade-in-slide-top {
+    from {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
+}

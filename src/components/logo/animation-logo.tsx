@@ -28,7 +28,7 @@ const AnimationLogo = () => {
                     d="m124.11,284.77l10.22-17.42,115.78,197.69,115.56-197.41,10.22,17.42-125.77,214.86-126-215.14Z" fill="#fff">
                 </path>
             </svg>
-            <div className="logo-text">
+            <div className={style['logo-text']}>
                 <h1>Ventura Lab</h1>
                 <small>лабаратория красоты</small>
             </div>

@@ -11,7 +11,26 @@
 }
 
 .navigation__link {
+    display: block;
     color: #000;
     text-decoration: none;
-    font-size: 18px; 
+    font-size: 18px;
+    position: relative;
+}
+
+.navigation__link::after {
+    content: ' ';
+    display: block;
+    height: 2px;
+    background-color: #009900;
+    position: absolute;
+    transition: .3s;
+    width: 0;
+    left: 50%
+}
+
+.navigation__link:hover::after {
+    width: 100%;
+    transition: .3s;
+    left: 0
 }

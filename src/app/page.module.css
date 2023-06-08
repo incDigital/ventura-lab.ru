@@ -11,5 +11,27 @@
 }
 
 .hero__navigation {
-    margin: 35px 0;
+    opacity: 0;
+    animation: fade-in-slide-bottom .7s 4.5s forwards;
+}
+
+.hero__sep {
+    background-color: #009900;
+    height: 2px;
+    width: 300px;
+    animation: fade-in-slide-bottom .7s 4.5s forwards;
+    opacity: 0;
+    margin: 25px 0;
+}
+
+@keyframes fade-in-slide-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    to {
+        opacity: 100%;
+        transform: translateY(0px);
+    }
 }
